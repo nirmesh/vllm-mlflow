@@ -1,0 +1,6 @@
+vllm
+transformers
+mlflow
+flask
+safetensors
+boto3
