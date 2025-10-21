@@ -1,5 +1,10 @@
 ### MLFLOW setup with juju
 ```
+
+juju add-model mlflow-model
+juju models
+juju deploy mlflow --trust
+
 kubectl port-forward -n mlflow-model mlflow-server-0 5000:5000
 
 kubectl patch svc mlflow-minio -n mlflow-model -p '{
